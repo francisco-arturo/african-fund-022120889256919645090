@@ -312,7 +312,7 @@
     renderDeskActivity();
   }
 
-  function addGift(name, email, phone, method, amount, emailOpt, smsOpt) {
+  function addGift(method, amount) {
     var today = new Date();
     var iso = today.getFullYear() + "-" + String(today.getMonth() + 1).padStart(2, "0") + "-" + String(today.getDate()).padStart(2, "0");
     var gift = {
@@ -321,15 +321,9 @@
       detail: METHOD_NAMES[method] + " · recurring",
       kind: "in",
       cat: "inflow",
-      amount: amount,
-      donor: name,
-      email: email,
-      phone: phone,
-      emailOpt: Boolean(emailOpt),
-      smsOpt: Boolean(smsOpt)
+      amount: amount
     };
     state.localGifts.unshift(gift);
-    state.lastName = name;
     state.syncLabel = "just now";
     saveGifts();
     renderAll();
@@ -403,7 +397,8 @@
     submitButton.textContent = "Setting up…";
 
     window.setTimeout(function () {
-      addGift(name, email, phone, state.method, state.amount, emailOpt, smsOpt);
+      addGift(state.method, state.amount);
+      state.lastName = name;
       showSuccess(name, state.amount, state.method, emailOpt, smsOpt);
       submitButton.disabled = false;
       submitButton.textContent = "Confirm monthly gift";
