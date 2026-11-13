@@ -15,7 +15,7 @@
       "description": "A complete static prototype: editorial donor site for a pan-African NGO, $1 to $10 monthly giving through SoFi payroll, Stripe or PayPal, sample family and storekeeper stories, a live public ledger with filters and CSV export, a social campaign kit, automated email and text thank-you previews, and a Fund desk for voucher batches and donor care.",
       "status": "done",
       "dependencies": [],
-      "evidence": "node scripts/verify.mjs on 2026-11-13: Markup, styles, scripts and routes all pass; /, /styles.css, /app.js and the hero image return 200; unknown routes return 404. Local review server on http://127.0.0.1:4188 returns 200 and serves the Umoja page.",
+      "evidence": "node scripts/verify.mjs on 2026-11-13: Markup, styles, scripts and routes all pass; /, /styles.css, /app.js and the hero image return 200; unknown routes return 404. Pushed to https://github.com/francisco-arturo/african-fund-022120889256919645090 and deployed to https://african-fund-022120889256919645090.vercel.app (dpl_D2a6eDmn5y1J62V4gxBqVDsxzQeP, READY). Live Node fetch: / 200 39,277 bytes with Umoja, /styles.css 200 45,547 bytes, /app.js 200 22,904 bytes, and no Relay content. Local preview on http://127.0.0.1:4321 returns 200.",
       "done_criteria": [
         "Behavior implemented",
         "node scripts/verify.mjs run and its output recorded in progress.md",

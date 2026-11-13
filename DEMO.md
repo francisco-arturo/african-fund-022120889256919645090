@@ -4,9 +4,9 @@ A donor-facing template for a pan-African NGO in the USA: $1 to $10 monthly payr
 $10 food vouchers at African-owned groceries, a public ledger, a campaign kit and automated
 thank-yous.
 
-- **Live URL:** not deployed yet. The local build is ready for review.
-- **Local URL:** <http://127.0.0.1:4188>
-- **Run:** `$env:PORT = "4188"; node dev-server.mjs` from this directory
+- **Live URL:** <https://african-fund-022120889256919645090.vercel.app>
+- **Local URL:** <http://127.0.0.1:4321>
+- **Run:** `$env:PORT = "4321"; node dev-server.mjs` from this directory
 - **Verify:** `node scripts/verify.mjs` (also wrapped by `init.ps1` / `init.sh`)
 - **Last verified:** 2026-11-13
 
@@ -14,7 +14,7 @@ thank-yous.
 
 | # | Do this | What the visitor sees |
 |---|---|---|
-| 1 | Open <http://127.0.0.1:4188> | The hero, the live November ledger card and four month-to-date figures |
+| 1 | Open <https://african-fund-022120889256919645090.vercel.app> | The hero, the live November ledger card and four month-to-date figures |
 | 2 | Click **Start monthly giving** | A three-step giving dialog with $1, $3, $5, $10 chips and a 1 to 10 slider |
 | 3 | Pick $5, keep **SoFi payroll**, click **Continue** | The contact step, gift summary, email/text toggles and an authorization check |
 | 4 | Enter a first name and email, click **Confirm monthly gift** | A thank-you receipt, a queued email preview and a queued text preview |
@@ -48,8 +48,10 @@ thank-yous.
 ## If something fails while they look
 
 - Reset the demo with **Reset demo data** at the bottom of Fund desk.
-- If the page is stale, hard-refresh; the server sends `Cache-Control: no-store`.
-- If port 4188 is taken, set another port: `$env:PORT = "4190"; node dev-server.mjs`.
+- If the page is stale, hard-refresh; the server sends `Cache-Control: no-store`. Port 4188 was
+  previously used by an unrelated local prototype and can serve a stale app from the browser cache;
+  use the live URL or the clean local port 4321.
+- If port 4321 is taken, set another port: `$env:PORT = "4322"; node dev-server.mjs`.
 
 ## Not built (next, if the user wants it)
 

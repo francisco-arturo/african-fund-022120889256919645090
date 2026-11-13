@@ -6,11 +6,12 @@ gifts into $10 food vouchers at African-owned groceries, and publishes the ledge
 ## Run locally
 
 ```powershell
-$env:PORT = "4188"
+$env:PORT = "4321"
 node dev-server.mjs
 ```
 
-Open <http://127.0.0.1:4188>.
+Open <http://127.0.0.1:4321>. The live deployment is
+<https://african-fund-022120889256919645090.vercel.app>.
 
 There are no dependencies to install. The site is static HTML, CSS and vanilla JavaScript, so it
 deploys to Vercel as-is.
