@@ -1,0 +1,7 @@
+out/
+node_modules/
+.venv/
+.harness/last-*.json
+.chrome-profile*/
+.edge-profile/
+.DS_Store

@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Umoja - Small paychecks. Shared tables.</title>
+  <meta name="description" content="A working template for a pan-African NGO in the USA. Give $1 to $10 a month through payroll, card or PayPal. Follow every dollar from paycheck to a food voucher at an African store.">
+  <meta name="theme-color" content="#f6f0e4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Umoja home">
+      <svg viewBox="0 0 36 36" width="30" height="30" aria-hidden="true">
+        <path d="M18 3.5c8 0 14.5 6.5 14.5 14.5S26 32.5 18 32.5 3.5 26 3.5 18 10 3.5 18 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M8.5 21.5c2.5-5 5.7-7.5 9.5-7.5s7 2.5 9.5 7.5M9.5 12.5h17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span>Umoja</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#model">The model</a>
+      <a href="#stories">Stories</a>
+      <a href="#ledger">Ledger</a>
+      <a href="#campaign">Campaign</a>
+      <button class="nav-link" type="button" data-open-desk>Fund desk</button>
+    </nav>
+
+    <button class="btn btn--primary btn--small" type="button" data-open-give>Give monthly</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <h1 id="hero-title">Small paychecks.<br><span class="hero__emphasis">Shared tables.</span></h1>
+        <p class="hero__lede">Give $1 to $10 a month. See every dollar work.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" type="button" data-open-give>
+            Start monthly giving
+            <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <a class="btn btn--quiet" href="#ledger">Trace the money</a>
+        </div>
+        <p class="hero__fine">Payroll, card or PayPal. No minimum. Cancel anytime.</p>
+      </div>
+
+      <figure class="hero__media">
+        <img src="assets/photos/playing-in-the-nuba-mountains-1920.jpg" alt="Children playing football at golden hour in the Nuba mountains" width="1920" height="1280">
+        <figcaption class="live-card">
+          <span class="live-card__meta">November ledger · updated 2 min ago</span>
+          <div class="live-card__row">
+            <strong data-live="inflow">$9,000</strong>
+            <span>into the pool</span>
+          </div>
+          <div class="live-card__row">
+            <strong data-live="vouchers">765</strong>
+            <span>$10 food vouchers issued</span>
+          </div>
+          <div class="live-card__foot">
+            <span data-live="givers">1,284</span> monthly givers · <a href="#ledger">open ledger</a>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="impact-strip" aria-label="This month at a glance">
+      <div class="impact-strip__item">
+        <strong data-live="givers">1,284</strong>
+        <span>monthly givers</span>
+      </div>
+      <div class="impact-strip__item">
+        <strong data-live="food">$7,650</strong>
+        <span>to food vouchers</span>
+      </div>
+      <div class="impact-strip__item">
+        <strong data-live="vouchers">765</strong>
+        <span>$10 market vouchers</span>
+      </div>
+      <div class="impact-strip__item">
+        <strong data-live="reserve">$270</strong>
+        <span>rolling to the next batch</span>
+      </div>
+    </section>
+
+    <section class="model" id="model" aria-labelledby="model-title">
+      <div class="section-head">
+        <h2 id="model-title">From paycheck<br>to plate.</h2>
+        <p class="section-head__lede">A small, automatic gift joins a pooled monthly fund. Operating costs stay capped. The rest becomes e-vouchers at African-owned food stores.</p>
+      </div>
+
+      <div class="model__grid">
+        <ol class="route" aria-label="How the monthly pool moves">
+          <li class="route__step">
+            <span class="route__number">1</span>
+            <div>
+              <h3>You choose a number you can keep.</h3>
+              <p>$1 to $10 comes out monthly by payroll deduction, debit card or PayPal. Change or stop it in one click.</p>
+            </div>
+          </li>
+          <li class="route__step">
+            <span class="route__number">2</span>
+            <div>
+              <h3>The pool covers the basics first.</h3>
+              <p>Payment processing and a 7% operating cap come off the top. The published ledger shows both, every month.</p>
+            </div>
+          </li>
+          <li class="route__step">
+            <span class="route__number">3</span>
+            <div>
+              <h3>The rest becomes food on the table.</h3>
+              <p>$10 e-vouchers are sent to verified families and redeemed at partner African groceries. Unspent funds roll into the next batch.</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="amount-lab" aria-labelledby="amount-lab-title">
+          <div class="amount-lab__head">
+            <h3 id="amount-lab-title">Try the math</h3>
+            <span class="tag tag--plain">Demo</span>
+          </div>
+          <p class="amount-lab__label">Monthly gift</p>
+          <div class="amount-chips" role="group" aria-label="Choose a monthly amount">
+            <button class="amount-chip" type="button" data-amount="1" aria-pressed="false">$1</button>
+            <button class="amount-chip" type="button" data-amount="3" aria-pressed="false">$3</button>
+            <button class="amount-chip is-selected" type="button" data-amount="5" aria-pressed="true">$5</button>
+            <button class="amount-chip" type="button" data-amount="10" aria-pressed="false">$10</button>
+          </div>
+          <label class="sr-only" for="amount-range">Monthly amount from 1 to 10 dollars</label>
+          <input class="amount-range" id="amount-range" type="range" min="1" max="10" step="1" value="5">
+          <div class="amount-readout">
+            <strong data-amount-display>$5</strong>
+            <span>a month</span>
+          </div>
+          <p class="amount-impact">At the current food allocation, that is about <strong data-out-vouchers>5</strong> $10 market vouchers a year.</p>
+          <button class="btn btn--primary btn--wide" type="button" data-open-give>Set this gift</button>
+          <p class="amount-lab__fine">No charge is made in this template.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stories" id="stories" aria-labelledby="stories-title">
+      <div class="section-head section-head--split">
+        <h2 id="stories-title">Stories from<br>the table.</h2>
+        <p class="section-head__lede">Three story slots for the families and storekeepers your fund serves. Replace these sample stories with consented, first-person accounts before launch.</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story story--lead">
+          <img src="assets/photos/fish-market-in-nouakchott-mauritania-1920.jpg" alt="Women selling fish on mats along a sandy beach in warm light" width="1920" height="1280" loading="lazy">
+          <div class="story__body">
+            <h3>The Sunday pot</h3>
+            <p class="story__place">Sample story. Houston, Texas.</p>
+            <p>After church, three households split the cost of fish, tomatoes and rice. A pooled market voucher turns one counter into a Sunday meal for eleven people.</p>
+            <p class="story__note">A $10 voucher does not replace a budget. It makes the last week of the month less brittle.</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img src="assets/photos/photo-b6ac1a2c02-1920.jpg" alt="Amazigh stew with eggs, flatbread and dates on a rustic table" width="1920" height="1280" loading="lazy">
+          <div class="story__body">
+            <h3>Amina’s Saturday list</h3>
+            <p class="story__place">Sample story. Minneapolis, Minnesota.</p>
+            <p>Rice, lentils, tomatoes, tea. The voucher covers the staples her family already cooks, at the Somali market two blocks from home.</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img src="assets/photos/winterswijk-nl-wochenmarkt-2016-4139-1920.jpg" alt="Wooden market crates heaped with bright oranges, close up" width="1920" height="1280" loading="lazy">
+          <div class="story__body">
+            <h3>The store that says yes</h3>
+            <p class="story__place">Sample story. Atlanta, Georgia.</p>
+            <p>A family-run African grocery redeems the vouchers at the till and gets paid weekly. The store stays open, and the block keeps its food counter.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ledger" id="ledger" aria-labelledby="ledger-title">
+      <div class="ledger__head">
+        <div>
+          <h2 id="ledger-title">Every dollar<br>leaves a trail.</h2>
+          <p class="section-head__lede">This is the demo ledger for November 2026. It updates when a gift is made in this browser, so you can watch an inflow land and a voucher batch leave.</p>
+        </div>
+        <div class="ledger__head-actions">
+          <span class="sync-label">Last sync <span data-live="sync">2 min ago</span></span>
+          <button class="btn btn--small btn--outline" type="button" data-export>
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download CSV
+          </button>
+        </div>
+      </div>
+
+      <div class="ledger-stats">
+        <div class="ledger-stat">
+          <span class="ledger-stat__label">Money in</span>
+          <strong data-live="inflow">$9,000</strong>
+          <span class="ledger-stat__foot">1,284 recurring gifts</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="ledger-stat__label">Food vouchers</span>
+          <strong data-live="food">$7,650</strong>
+          <span class="ledger-stat__foot"><span data-live="vouchers">765</span> $10 vouchers</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="ledger-stat__label">Operations</span>
+          <strong data-live="ops">$630</strong>
+          <span class="ledger-stat__foot">Capped at 7%</span>
+        </div>
+        <div class="ledger-stat">
+          <span class="ledger-stat__label">Payment fees</span>
+          <strong data-live="fees">$450</strong>
+          <span class="ledger-stat__foot">Stripe, PayPal, SoFi</span>
+        </div>
+      </div>
+
+      <div class="ledger-visuals">
+        <div class="chart-panel">
+          <div class="panel-head">
+            <h3>Monthly inflow</h3>
+            <span class="tag tag--plain">Last 6 months</span>
+          </div>
+          <div class="chart" role="img" aria-label="Monthly inflow grew from 6,720 dollars in June to 9,000 dollars in November. Each month, 85 percent went to food vouchers.">
+            <div class="chart__col"><span class="chart__value">$6.7k</span><div class="chart__bar" style="--bar:150px"><span class="chart__food"></span></div><span class="chart__label">Jun</span></div>
+            <div class="chart__col"><span class="chart__value">$7.1k</span><div class="chart__bar" style="--bar:159px"><span class="chart__food"></span></div><span class="chart__label">Jul</span></div>
+            <div class="chart__col"><span class="chart__value">$7.6k</span><div class="chart__bar" style="--bar:169px"><span class="chart__food"></span></div><span class="chart__label">Aug</span></div>
+            <div class="chart__col"><span class="chart__value">$8.1k</span><div class="chart__bar" style="--bar:180px"><span class="chart__food"></span></div><span class="chart__label">Sep</span></div>
+            <div class="chart__col"><span class="chart__value">$8.6k</span><div class="chart__bar" style="--bar:192px"><span class="chart__food"></span></div><span class="chart__label">Oct</span></div>
+            <div class="chart__col is-current"><span class="chart__value">$9.0k</span><div class="chart__bar" style="--bar:200px"><span class="chart__food"></span></div><span class="chart__label">Nov</span></div>
+          </div>
+          <div class="chart__legend">
+            <span><i class="key key--food"></i>Food vouchers</span>
+            <span><i class="key key--rest"></i>Operations + fees</span>
+          </div>
+        </div>
+
+        <div class="split-panel">
+          <div class="panel-head">
+            <h3>Where each $1 went</h3>
+            <span class="tag tag--plain">November</span>
+          </div>
+          <div class="split-bar" role="img" aria-label="85 percent food vouchers, 7 percent operations, 5 percent payment fees, 3 percent reserved for the next batch.">
+            <span class="split-bar__food" style="width:85%"></span>
+            <span class="split-bar__ops" style="width:7%"></span>
+            <span class="split-bar__fees" style="width:5%"></span>
+            <span class="split-bar__reserve" style="width:3%"></span>
+          </div>
+          <ul class="split-list">
+            <li><span>Food vouchers</span><strong>85%</strong></li>
+            <li><span>Operations</span><strong>7%</strong></li>
+            <li><span>Payment fees</span><strong>5%</strong></li>
+            <li><span>Next voucher batch</span><strong>3%</strong></li>
+          </ul>
+          <p class="split-panel__note"><span data-live="reserve">$270</span> is reserved for the November 30 batch. If a batch comes in under budget, the difference rolls forward, not into overhead.</p>
+        </div>
+      </div>
+
+      <div class="ledger-table">
+        <div class="ledger-table__head">
+          <h3>November activity</h3>
+          <div class="filters" role="group" aria-label="Filter ledger rows">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="in" aria-pressed="false">In</button>
+            <button class="filter" type="button" data-filter="food" aria-pressed="false">Food</button>
+            <button class="filter" type="button" data-filter="ops" aria-pressed="false">Operations</button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <caption class="sr-only">November 2026 inflows and outflows for the Umoja food voucher fund</caption>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col" class="num">Amount</th>
+              </tr>
+            </thead>
+            <tbody id="ledger-body">
+              <tr data-kind="in" data-cat="in">
+                <td>Nov 12</td>
+                <td><strong>Monthly payroll gifts</strong><span class="row-detail">1,284 givers · Stripe, PayPal, SoFi</span></td>
+                <td><span class="cat cat--in">Inflow</span></td>
+                <td class="num amount--in">+$9,000</td>
+              </tr>
+              <tr data-kind="out" data-cat="ops">
+                <td>Nov 12</td>
+                <td><strong>Payment processing</strong><span class="row-detail">Card, bank and payroll fees</span></td>
+                <td><span class="cat">Payment fees</span></td>
+                <td class="num amount--out">-$450</td>
+              </tr>
+              <tr data-kind="out" data-cat="food">
+                <td>Nov 11</td>
+                <td><strong>Twin Cities African Market</strong><span class="row-detail">480 vouchers · Minneapolis, MN</span></td>
+                <td><span class="cat cat--food">Food vouchers</span></td>
+                <td class="num amount--out">-$2,400</td>
+              </tr>
+              <tr data-kind="out" data-cat="food">
+                <td>Nov 10</td>
+                <td><strong>Houston Afro Foods</strong><span class="row-detail">390 vouchers · Houston, TX</span></td>
+                <td><span class="cat cat--food">Food vouchers</span></td>
+                <td class="num amount--out">-$1,950</td>
+              </tr>
+              <tr data-kind="out" data-cat="food">
+                <td>Nov 8</td>
+                <td><strong>Atlanta Little Africa</strong><span class="row-detail">360 vouchers · Atlanta, GA</span></td>
+                <td><span class="cat cat--food">Food vouchers</span></td>
+                <td class="num amount--out">-$1,800</td>
+              </tr>
+              <tr data-kind="out" data-cat="food">
+                <td>Nov 5</td>
+                <td><strong>Bronx Market Row</strong><span class="row-detail">300 vouchers · Bronx, NY</span></td>
+                <td><span class="cat cat--food">Food vouchers</span></td>
+                <td class="num amount--out">-$1,500</td>
+              </tr>
+              <tr data-kind="out" data-cat="ops">
+                <td>Nov 4</td>
+                <td><strong>Caseworker time and translation</strong><span class="row-detail">Family verification and store support</span></td>
+                <td><span class="cat">Operations</span></td>
+                <td class="num amount--out">-$420</td>
+              </tr>
+              <tr data-kind="out" data-cat="ops">
+                <td>Nov 3</td>
+                <td><strong>Insurance and accounting</strong><span class="row-detail">Monthly policy and bookkeeping</span></td>
+                <td><span class="cat">Operations</span></td>
+                <td class="num amount--out">-$210</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Every gift made in this demo is added to the ledger in this browser. <span data-live="reserve">$270</span> is reserved for the next food-voucher batch.</p>
+      </div>
+    </section>
+
+    <section class="campaign" id="campaign" aria-labelledby="campaign-title">
+      <div class="campaign__head">
+        <div>
+          <h2 id="campaign-title">Make the table bigger.</h2>
+          <p class="section-head__lede">A monthly gift is easier to share when the ask is small and the proof is public. Use the campaign kit, then point people back to the ledger.</p>
+        </div>
+        <button class="btn btn--primary" type="button" data-open-give>Join the $5 table</button>
+      </div>
+
+      <div class="social-grid">
+        <article class="social-card social-card--forest">
+          <span class="tag tag--inverse">Instagram story</span>
+          <p class="social-card__quote">What if $5 bought someone a week of groceries?</p>
+          <p class="social-card__foot">#TheFiveDollarTable · umoja.example</p>
+          <button class="text-button text-button--inverse" type="button" data-copy-key="instagram">
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M7 6.5V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1.5M5 7h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            Copy caption
+          </button>
+        </article>
+
+        <article class="social-card social-card--clay">
+          <span class="tag tag--inverse">LinkedIn post</span>
+          <p class="social-card__quote">Our team gives $1 to $10 a paycheck. Here is where it went.</p>
+          <p class="social-card__foot">November ledger · 85% to food</p>
+          <button class="text-button text-button--inverse" type="button" data-copy-key="linkedin">
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M7 6.5V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1.5M5 7h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            Copy caption
+          </button>
+        </article>
+
+        <article class="social-card social-card--paper">
+          <span class="tag tag--plain">WhatsApp note</span>
+          <p class="social-card__quote">I set up $5 a month. It took 40 seconds. Join me?</p>
+          <p class="social-card__foot">A personal ask beats a broadcast.</p>
+          <button class="text-button" type="button" data-copy-key="whatsapp">
+            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M7 6.5V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1.5M5 7h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            Copy caption
+          </button>
+        </article>
+      </div>
+
+      <div class="campaign-calendar">
+        <div class="campaign-calendar__head">
+          <h3>This week’s campaign</h3>
+          <button class="text-button" type="button" data-open-desk>Open the campaign desk</button>
+        </div>
+        <ol class="calendar-list">
+          <li><span class="calendar-day">Mon</span><span class="calendar-channel">Instagram</span><span>Meet a storekeeper. One photo, one paragraph, one link.</span><span class="status status--done">Posted</span></li>
+          <li><span class="calendar-day">Wed</span><span class="calendar-channel">LinkedIn</span><span>Publish the monthly ledger. Lead with the food percentage.</span><span class="status status--queued">Scheduled</span></li>
+          <li><span class="calendar-day">Fri</span><span class="calendar-channel">WhatsApp</span><span>Ask five coworkers to join the $5 table.</span><span class="status status--queued">Draft</span></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__top">
+      <p class="footer__wordmark">Umoja</p>
+      <div class="footer__columns">
+        <div>
+          <h2>The work</h2>
+          <a href="#model">How the pool works</a>
+          <a href="#stories">Family stories</a>
+          <a href="#campaign">Campaign kit</a>
+        </div>
+        <div>
+          <h2>The money</h2>
+          <a href="#ledger">Live ledger</a>
+          <button class="footer-link" type="button" data-open-desk>Fund desk</button>
+          <button class="footer-link" type="button" data-export>Download CSV</button>
+        </div>
+        <div>
+          <h2>For the team</h2>
+          <p>This is a working template with a seeded ledger and simulated payments. Replace the brand, stories, partner stores and payment keys before launch.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__fine">
+      <p>Umoja is a demonstration template. No donations are processed. 501(c)(3) status, state charitable registrations, store agreements and consent for family stories must be in place before launch.</p>
+      <p>Photographs: <a href="https://commons.wikimedia.org/wiki/File:Playing_in_the_Nuba_mountains.jpg">Marco Gualazzini</a>, <a href="https://commons.wikimedia.org/wiki/File:Fish_market_in_Nouakchott_-_Mauritania.jpg">Uzabiaga</a>, <a href="https://commons.wikimedia.org/wiki/File:%D8%AA%D9%85%D8%BA%D8%B6%D8%A7%D9%84%D8%8C_%D8%B7%D8%A8%D9%82_%D8%A3%D9%85%D8%A7%D8%B2%DB%8C%D8%BA%DB%8C.jpg">Ahmed Sh Dridi</a>, <a href="https://commons.wikimedia.org/wiki/File:Winterswijk_(NL),_Wochenmarkt_--_2016_--_4139.jpg">Dietmar Rabich</a> (CC BY-SA 4.0, Wikimedia Commons).</p>
+      <p>© 2026 Umoja template. All figures are sample data.</p>
+    </div>
+  </footer>
+
+  <dialog class="give-dialog" id="give-dialog" aria-labelledby="give-title">
+    <div class="give-dialog__top">
+      <a class="brand brand--dialog" href="#top" aria-label="Umoja home">
+        <svg viewBox="0 0 36 36" width="26" height="26" aria-hidden="true">
+          <path d="M18 3.5c8 0 14.5 6.5 14.5 14.5S26 32.5 18 32.5 3.5 26 3.5 18 10 3.5 18 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M8.5 21.5c2.5-5 5.7-7.5 9.5-7.5s7 2.5 9.5 7.5M9.5 12.5h17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span>Umoja</span>
+      </a>
+      <button class="icon-button" type="button" data-close-give aria-label="Close giving form">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="step-meter" aria-label="Giving steps">
+      <span class="step-meter__item is-active" data-step-label="1">1. Amount</span>
+      <span class="step-meter__item" data-step-label="2">2. Details</span>
+      <span class="step-meter__item" data-step-label="3">3. Thank you</span>
+    </div>
+
+    <form class="give-form" id="give-form" novalidate>
+      <section class="give-step" data-step="1">
+        <div class="give-step__intro">
+          <h2 id="give-title">Set your monthly table.</h2>
+          <p>Pick a number from $1 to $10. It comes out automatically each month, and you can stop it whenever you need to.</p>
+        </div>
+
+        <fieldset class="field-group">
+          <legend>Monthly gift</legend>
+          <div class="amount-chips amount-chips--dialog" role="group" aria-label="Monthly gift amount">
+            <button class="amount-chip" type="button" data-dialog-amount="1" aria-pressed="false">$1</button>
+            <button class="amount-chip" type="button" data-dialog-amount="3" aria-pressed="false">$3</button>
+            <button class="amount-chip is-selected" type="button" data-dialog-amount="5" aria-pressed="true">$5</button>
+            <button class="amount-chip" type="button" data-dialog-amount="10" aria-pressed="false">$10</button>
+          </div>
+          <label class="range-label" for="dialog-amount">Or choose an amount <output id="dialog-amount-output" for="dialog-amount">$5</output></label>
+          <input class="amount-range" id="dialog-amount" type="range" min="1" max="10" step="1" value="5">
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>How it comes out</legend>
+          <div class="method-list">
+            <label class="method">
+              <input type="radio" name="method" value="sofi" checked>
+              <span class="method__copy"><strong>SoFi payroll</strong><span>Automated from your paycheck. No card fee.</span></span>
+              <span class="method__mark">Recommended</span>
+            </label>
+            <label class="method">
+              <input type="radio" name="method" value="stripe">
+              <span class="method__copy"><strong>Debit or credit card</strong><span>Processed by Stripe. 2.9% + 30¢ per gift.</span></span>
+            </label>
+            <label class="method">
+              <input type="radio" name="method" value="paypal">
+              <span class="method__copy"><strong>PayPal</strong><span>PayPal balance or linked bank account.</span></span>
+            </label>
+          </div>
+          <p class="method-note" id="method-note">SoFi payroll gifts carry no card fee. Connect your employer account on the next step.</p>
+        </fieldset>
+
+        <div class="give-step__actions">
+          <button class="btn btn--primary btn--wide" type="button" data-next-step="2">Continue</button>
+          <p class="give-fine">Demo only. No payment method is charged.</p>
+        </div>
+      </section>
+
+      <section class="give-step give-step--details" data-step="2" hidden>
+        <div class="give-step__intro">
+          <h2>Where should the thank-you go?</h2>
+          <p>You will get a receipt, a monthly impact note and a short thank-you after the first gift.</p>
+        </div>
+
+        <div class="details-grid">
+          <div class="details-fields">
+            <div class="field">
+              <label for="donor-name">First name</label>
+              <input id="donor-name" name="name" type="text" autocomplete="given-name" placeholder="Amina" required>
+            </div>
+            <div class="field">
+              <label for="donor-email">Email</label>
+              <input id="donor-email" name="email" type="email" autocomplete="email" placeholder="amina@example.com" required>
+            </div>
+            <div class="field">
+              <label for="donor-phone">Mobile number <span>optional</span></label>
+              <input id="donor-phone" name="phone" type="tel" autocomplete="tel" placeholder="(612) 555-0142">
+            </div>
+
+            <div class="check-list">
+              <label class="check"><input id="opt-email" type="checkbox" checked> Email my receipt and monthly impact note</label>
+              <label class="check"><input id="opt-sms" type="checkbox" checked> Text me a thank-you after my gift</label>
+              <label class="check"><input id="opt-consent" type="checkbox" checked required> I authorize this monthly gift. I can cancel anytime.</label>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+          </div>
+
+          <aside class="gift-summary" aria-label="Gift summary">
+            <span class="tag tag--plain">Your gift</span>
+            <p class="gift-summary__amount"><span data-summary-amount>$5</span><span> / month</span></p>
+            <dl>
+              <div><dt>Method</dt><dd data-summary-method>SoFi payroll</dd></div>
+              <div><dt>First gift</dt><dd>Next monthly pool</dd></div>
+              <div><dt>Food impact</dt><dd>About <span data-summary-vouchers>5</span> vouchers a year</dd></div>
+            </dl>
+            <p>Your gift joins a pooled fund. It is not tied to one family, so the team can send food where the need is highest that month.</p>
+          </aside>
+        </div>
+
+        <div class="give-step__actions give-step__actions--row">
+          <button class="btn btn--quiet" type="button" data-back-step="1">Back</button>
+          <button class="btn btn--primary" type="submit" id="submit-gift">Confirm monthly gift</button>
+        </div>
+        <p class="give-fine">Demo only. No card, bank or payroll account is charged.</p>
+      </section>
+
+      <section class="give-step give-step--success" data-step="3" hidden>
+        <div class="success-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path d="m7 17 6 6 12-14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2>Thank you, <span data-success-name>Amina</span>.</h2>
+        <p class="success-lede">Your <strong data-success-amount>$5</strong> monthly gift is set. The first gift joins the next monthly pool.</p>
+
+        <div class="success-grid">
+          <div class="success-receipt">
+            <span class="tag tag--plain">Gift receipt</span>
+            <dl>
+              <div><dt>Amount</dt><dd data-success-amount>$5 / month</dd></div>
+              <div><dt>Method</dt><dd data-success-method>SoFi payroll</dd></div>
+              <div><dt>Status</dt><dd>Active in demo</dd></div>
+              <div><dt>Annual food impact</dt><dd>About <span data-success-vouchers>5</span> vouchers</dd></div>
+            </dl>
+            <p>Your gift is already in the live ledger for this browser. No money moved.</p>
+          </div>
+
+          <div class="message-previews">
+            <article>
+              <div class="message-previews__head"><span>Email</span><span class="status status--queued" data-msg-status="email">Queued</span></div>
+              <h3>You just set the table</h3>
+              <p>Hi <span data-success-name>Amina</span>, your <span data-success-amount>$5</span> monthly gift is active. This month it joins 1,284 neighbors. Here is the ledger: <span class="fake-link">umoja.example/ledger</span>.</p>
+              <p class="message-previews__foot">Receipt, impact note and a one-click cancel.</p>
+            </article>
+            <article>
+              <div class="message-previews__head"><span>Text</span><span class="status status--queued" data-msg-status="sms">Queued</span></div>
+              <p>Umoja: Thank you, <span data-success-name>Amina</span>. Your <span data-success-amount>$5</span>/month is active. Reply STOP to opt out.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="give-step__actions give-step__actions--row">
+          <button class="btn btn--primary" type="button" data-close-give>Back to the table</button>
+          <button class="btn btn--outline" type="button" data-copy-key="share">Share your why</button>
+        </div>
+      </section>
+    </form>
+  </dialog>
+
+  <dialog class="desk-dialog" id="fund-desk" aria-labelledby="desk-title">
+    <div class="desk">
+      <header class="desk__header">
+        <div class="desk__brand">
+          <span class="brand brand--desk">Umoja</span>
+          <span class="desk__label">Fund desk</span>
+        </div>
+        <div class="desk__persona">
+          <strong>Nadia Okafor</strong>
+          <span>Operations lead</span>
+        </div>
+        <button class="btn btn--small btn--outline" type="button" data-close-desk>Back to donor site</button>
+      </header>
+
+      <main class="desk__main">
+        <div class="desk__title">
+          <div>
+            <h2 id="desk-title">Today at a glance.</h2>
+            <p>November 13, 2026. Demo workspace. Last sync <span data-live="sync">2 min ago</span>.</p>
+          </div>
+          <button class="btn btn--small btn--outline" type="button" data-export>Export ledger</button>
+        </div>
+
+        <div class="desk-kpis">
+          <div><span>Money in</span><strong data-live="inflow">$9,000</strong><small>1,284 recurring</small></div>
+          <div><span>Food out</span><strong data-live="food">$7,650</strong><small><span data-live="vouchers">765</span> vouchers</small></div>
+          <div><span>Reserved</span><strong data-live="reserve">$270</strong><small>Next batch Nov 30</small></div>
+          <div><span>Active givers</span><strong data-live="givers">1,284</strong><small>92% still active</small></div>
+        </div>
+
+        <div class="desk-grid">
+          <section class="desk-panel desk-panel--wide" aria-labelledby="batches-title">
+            <div class="panel-head">
+              <h3 id="batches-title">Voucher batches</h3>
+              <span class="status status--live">Reconciled</span>
+            </div>
+            <div class="table-scroll">
+              <table class="desk-table">
+                <thead><tr><th scope="col">Partner store</th><th scope="col">City</th><th scope="col">Vouchers</th><th scope="col">Amount</th><th scope="col">Status</th></tr></thead>
+                <tbody>
+                  <tr><td>Twin Cities African Market</td><td>Minneapolis</td><td>480</td><td>$2,400</td><td><span class="status status--done">Redeemed</span></td></tr>
+                  <tr><td>Houston Afro Foods</td><td>Houston</td><td>390</td><td>$1,950</td><td><span class="status status--done">Redeemed</span></td></tr>
+                  <tr><td>Atlanta Little Africa</td><td>Atlanta</td><td>360</td><td>$1,800</td><td><span class="status status--queued">Issuing</span></td></tr>
+                  <tr><td>Bronx Market Row</td><td>Bronx</td><td>300</td><td>$1,500</td><td><span class="status status--done">Redeemed</span></td></tr>
+                  <tr><td>Next batch reserve</td><td>Multi-city</td><td>27</td><td>$270</td><td><span class="status status--draft">Nov 30</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="desk-panel" aria-labelledby="care-title">
+            <div class="panel-head">
+              <h3 id="care-title">Donor care</h3>
+              <span class="status status--live">Automated</span>
+            </div>
+            <ul class="care-list">
+              <li><div><strong>Receipt and thank-you email</strong><span>Sent within 60 seconds</span></div><span class="status status--done">On</span></li>
+              <li><div><strong>First-gift text</strong><span>Only if the donor opts in</span></div><span class="status status--done">On</span></li>
+              <li><div><strong>Day-7 impact note</strong><span>Shows the voucher batch</span></div><span class="status status--done">On</span></li>
+              <li><div><strong>Failed-message retry</strong><span>3 retries, then a task</span></div><span class="status status--queued">2 queued</span></li>
+            </ul>
+          </section>
+
+          <section class="desk-panel" aria-labelledby="queue-title">
+            <div class="panel-head">
+              <h3 id="queue-title">Campaign queue</h3>
+              <span class="tag tag--plain">This week</span>
+            </div>
+            <ul class="queue-list">
+              <li data-queue-row><div><strong>Instagram. Storekeeper photo</strong><span>Mon 9:00am, caption ready</span></div><button class="text-button" type="button" data-post>Post now</button></li>
+              <li data-queue-row><div><strong>LinkedIn. November ledger</strong><span>Wed 8:30am, scheduled</span></div><button class="text-button" type="button" data-post>Post now</button></li>
+              <li data-queue-row><div><strong>WhatsApp. Five coworkers</strong><span>Fri 12:00pm, draft</span></div><button class="text-button" type="button" data-post>Post now</button></li>
+            </ul>
+          </section>
+
+          <section class="desk-panel desk-panel--wide" aria-labelledby="desk-ledger-title">
+            <div class="panel-head">
+              <h3 id="desk-ledger-title">Latest ledger activity</h3>
+              <button class="text-button" type="button" data-close-desk>View donor site</button>
+            </div>
+            <ul class="activity-list" id="desk-activity">
+              <li><span>Nov 12</span><strong>Monthly payroll gifts</strong><span class="amount--in">+$9,000</span></li>
+              <li><span>Nov 12</span><strong>Payment processing</strong><span class="amount--out">-$450</span></li>
+              <li><span>Nov 11</span><strong>Twin Cities African Market</strong><span class="amount--out">-$2,400</span></li>
+              <li><span>Nov 10</span><strong>Houston Afro Foods</strong><span class="amount--out">-$1,950</span></li>
+            </ul>
+            <div class="desk__footer-row">
+              <button class="text-button" type="button" data-reset-demo>Reset demo data</button>
+              <span>All payments, vouchers and messages are simulated.</span>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
